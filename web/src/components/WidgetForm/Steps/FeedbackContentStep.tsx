@@ -51,7 +51,7 @@ export function FeedbackContentStep({
                     <ArrowLeft weight="bold" className="tw-w-4 tw-h-4" />
                 </button>
                 <span className="tw-text-xl tw-leading-6 tw-flex tw-items-center tw-gap-2">
-                    <img src={feedbackTypeInfo.image.source} alt={feedbackTypeInfo.image.alt} className="tw-w-6 tw-h-6" />
+                    <img src={import.meta.env.VITE_URL_PROJECT + feedbackTypeInfo.image.source} alt={feedbackTypeInfo.image.alt} className="tw-w-6 tw-h-6" />
                     {feedbackTypeInfo.title}
                 </span>
                 <CloseButton />
@@ -71,7 +71,7 @@ export function FeedbackContentStep({
                         type="submit"
                         disabled={comment.length === 0 || isSendingFeedback}
                         className="tw-p-2 tw-bg-brand-500 tw-rounded-md tw-border-transparent tw-flex-1 tw-flex tw-justify-center tw-items-center tw-text-sm hover:tw-bg-brand-300 focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-offset-2 focus:tw-ring-offset-zinc-900 focus:tw-ring-brand-500 tw-transition-colors
-                        disabled:opacity-50 disabled:hover:tw-bg-brand-500"
+                        disabled:opacity-50 disabled:hover:tw-bg-brand-500 tw-text-white"
                     >
                         {isSendingFeedback ? <Loading /> : 'Enviar feedback'}
                     </button>
