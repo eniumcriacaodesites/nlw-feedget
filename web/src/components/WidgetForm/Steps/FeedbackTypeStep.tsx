@@ -25,7 +25,7 @@ export function FeedbackTypeStep({ onFeedbackTypeChanged }: FeedbackTypeStepProp
                             onClick={() => onFeedbackTypeChanged(key as FeedbackType)}
                             type="button"
                         >
-                            <img src={window.location.href.substring(0, window.location.href.length - 1) + value.image.source} alt={value.image.alt} />
+                            <img src={import.meta.env.VITE_URL_PROJECT + value.image.source} alt={value.image.alt} />
                             <span>{value.title}</span>
                         </button>
                     )
