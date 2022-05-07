@@ -10,18 +10,18 @@ export function FeedbackTypeStep({ onFeedbackTypeChanged }: FeedbackTypeStepProp
     return (
         <>
             <header>
-                <span className="text-xl leading-6">
+                <span className="tw-text-xl tw-leading-6">
                     Deixe seu feedback
                 </span>
                 <CloseButton />
             </header>
 
-            <div className="flex py-8 gap-2 w-full">
+            <div className="tw-flex tw-py-8 tw-gap-2 tw-w-full">
                 {Object.entries(feedbackTypes).map(([key, value]) => {
                     return (
                         <button
                             key={key}
-                            className="bg-zinc-800 rounded-lg py-5 w-24 flex-1 flex flex-col items-center gap-2 border-2 border-transparent hover:border-brand-500 focus:border-brand-500 focus:outline-none"
+                            className="tw-bg-zinc-800 tw-rounded-lg tw-py-5 tw-w-24 tw-flex-1 tw-flex tw-flex-col tw-items-center tw-gap-2 tw-border-2 tw-border-transparent hover:tw-border-brand-500 focus:tw-border-brand-500 focus:tw-outline-none"
                             onClick={() => onFeedbackTypeChanged(key as FeedbackType)}
                             type="button"
                         >

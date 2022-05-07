@@ -45,7 +45,7 @@ export function WidgetForm() {
     }
 
     return (
-        <div className="bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
+        <div className="tw-bg-zinc-900 tw-p-4 tw-relative tw-rounded-2xl tw-mb-4 tw-flex tw-flex-col tw-items-center tw-shadow-lg tw-w-[calc(100vw-2rem)] md:tw-w-auto">
             {feedbackSent ? (
                 <FeedbackSuccessStep onFeedbackRestartRequested={handleRestartFeedback} />
             ) : (
@@ -63,8 +63,8 @@ export function WidgetForm() {
                 </>
             )
             }
-            <footer className="text-xs text-neutral-400">
-                Feito com ♥ pela <a className="underline underline-offset-2" href="https://enium.com.br" target={"_blank"}>Enium</a>
+            <footer className="tw-text-xs tw-text-neutral-400">
+                Feito com ♥ pela <a className="tw-underline tw-underline-offset-2" href="https://enium.com.br" target={"_blank"}>Enium</a>
             </footer>
         </div >
     );
