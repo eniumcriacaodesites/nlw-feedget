@@ -1,5 +1,6 @@
 module.exports = {
   prefix: 'tw-',
+  darkMode: 'class',
   content: ["./src/**/*.{html,tsx}"],
   theme: {
     extend: {

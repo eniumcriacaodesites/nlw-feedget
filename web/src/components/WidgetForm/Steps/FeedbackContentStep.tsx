@@ -45,7 +45,7 @@ export function FeedbackContentStep({
             <header>
                 <button
                     type="button"
-                    className="tw-top-5 tw-left-5 tw-absolute tw-text-zinc-400 hover:tw-text-zinc-100"
+                    className="tw-top-5 tw-left-5 tw-absolute tw-text-zinc-400 hover:tw-text-zinc-100 dark:hover:tw-text-brand-500"
                     onClick={onFeedbackRestartRequested}
                 >
                     <ArrowLeft weight="bold" className="tw-w-4 tw-h-4" />
@@ -60,7 +60,7 @@ export function FeedbackContentStep({
 
             <form onSubmit={handleSubmitFeedback} className="tw-my-4 tw-w-full">
                 <textarea
-                    className="tw-min-w-[304px] tw-w-full tw-min-h-[112px] tw-text-sm tw-placeholder-zinc-400 tw-text-zinc-100 tw-border-zinc-600 tw-bg-transparent tw-rounded-md focus:tw-border-brand-500 focus:tw-ring-brand-500 focus:tw-ring-1 focus:tw-resize-none  tw-scrollbar-thumb-zinc-700 tw-scrollbar-track-transparent tw-scrollbar-thin"
+                    className="tw-min-w-[304px] tw-w-full tw-min-h-[112px] tw-text-sm tw-placeholder-zinc-400 tw-text-zinc-100 tw-border-zinc-600 tw-bg-transparent tw-rounded-md focus:tw-border-brand-500 focus:tw-ring-brand-500 focus:tw-ring-1 focus:tw-resize-none  tw-scrollbar-thumb-zinc-700 tw-scrollbar-track-transparent tw-scrollbar-thin dark:tw-border-gray-200"
                     placeholder="Conte com detalhes o que está acontecendo..."
                     onChange={event => setComment(event.target.value)} />
                 <footer className="tw-flex tw-gap-2 tw-mt-2">
@@ -70,8 +70,7 @@ export function FeedbackContentStep({
                     <button
                         type="submit"
                         disabled={comment.length === 0 || isSendingFeedback}
-                        className="tw-p-2 tw-bg-brand-500 tw-rounded-md tw-border-transparent tw-flex-1 tw-flex tw-justify-center tw-items-center tw-text-sm hover:tw-bg-brand-300 focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-offset-2 focus:tw-ring-offset-zinc-900 focus:tw-ring-brand-500 tw-transition-colors
-                        disabled:opacity-50 disabled:hover:tw-bg-brand-500 tw-text-white"
+                        className="tw-p-2 tw-bg-brand-500 tw-rounded-md tw-border-transparent tw-flex-1 tw-flex tw-justify-center tw-items-center tw-text-sm hover:tw-bg-brand-300 focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-offset-2 focus:tw-ring-offset-zinc-900 focus:tw-ring-brand-500 tw-transition-colors disabled:opacity-50 disabled:hover:tw-bg-brand-500 tw-text-white"
                     >
                         {isSendingFeedback ? <Loading /> : 'Enviar feedback'}
                     </button>
