@@ -60,7 +60,7 @@ export function FeedbackContentStep({
 
             <form onSubmit={handleSubmitFeedback} className="tw-my-4 tw-w-full">
                 <textarea
-                    className="tw-min-w-[304px] tw-w-full tw-min-h-[112px] tw-text-sm tw-placeholder-zinc-400 tw-text-zinc-100 tw-border-zinc-600 tw-bg-transparent tw-rounded-md focus:tw-border-brand-500 focus:tw-ring-brand-500 focus:tw-ring-1 focus:tw-resize-none  tw-scrollbar-thumb-zinc-700 tw-scrollbar-track-transparent tw-scrollbar-thin dark:tw-border-gray-200"
+                    className="tw-min-w-[304px] tw-w-full tw-min-h-[112px] tw-text-sm tw-placeholder-zinc-400 tw-text-zinc-100 tw-border-zinc-600 tw-bg-transparent tw-rounded-md focus:tw-border-brand-500 focus:tw-ring-brand-500 focus:tw-ring-1 focus:tw-resize-none  tw-scrollbar-thumb-zinc-700 tw-scrollbar-track-transparent tw-scrollbar-thin dark:tw-border-gray-200 dark:tw-text-gray-600"
                     placeholder="Conte com detalhes o que está acontecendo..."
                     onChange={event => setComment(event.target.value)} />
                 <footer className="tw-flex tw-gap-2 tw-mt-2">

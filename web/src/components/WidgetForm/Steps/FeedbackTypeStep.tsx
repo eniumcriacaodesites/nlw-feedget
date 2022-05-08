@@ -21,7 +21,7 @@ export function FeedbackTypeStep({ onFeedbackTypeChanged }: FeedbackTypeStepProp
                     return (
                         <button
                             key={key}
-                            className="dark:tw-bg-zinc-100 tw-bg-zinc-800 tw-rounded-lg tw-py-5 tw-w-24 tw-flex-1 tw-flex tw-flex-col tw-items-center tw-gap-2 tw-border-2 tw-border-transparent hover:tw-border-brand-500 focus:tw-border-brand-500 focus:tw-outline-none"
+                            className="dark:tw-bg-zinc-100 tw-bg-zinc-800 tw-rounded-lg tw-py-5 tw-w-24 tw-flex-1 tw-flex tw-flex-col tw-items-center tw-gap-2 tw-border-2 tw-border-transparent hover:tw-border-brand-500 focus:tw-border-brand-500 focus:tw-outline-none hover:tw-max-w-xs tw-transition-all tw-duration-400 tw-ease-linear"
                             onClick={() => onFeedbackTypeChanged(key as FeedbackType)}
                             type="button"
                         >
